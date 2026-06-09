@@ -617,7 +617,8 @@ for (const { code } of LOCALES) {
 }
 
 export function t(locale, key) {
-  return M[locale]?.[key] ?? M.en[key] ?? key;
+  if (!key) return "";
+  return M[locale]?.[key] ?? M.en[key] ?? "";
 }
 
 export function applyI18n(root, locale) {
@@ -626,9 +627,11 @@ export function applyI18n(root, locale) {
   if (desc) desc.content = t(locale, root.dataset.pageDescKey ?? "meta.description");
 
   root.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.dataset.i18n;
+    const key = el.getAttribute("data-i18n");
+    if (!key) return;
     const val = t(locale, key);
-    if (el.dataset.i18nHtml !== undefined) el.innerHTML = val;
+    if (!val) return;
+    if (el.hasAttribute("data-i18n-html")) el.innerHTML = val;
     else el.textContent = val;
   });
 }

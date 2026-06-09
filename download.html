@@ -9,7 +9,7 @@
     />
     <title>Download — LoreVortex</title>
     <link rel="icon" href="assets/img/logo.png" type="image/png" />
-    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/site.css?v=6" />
   </head>
   <body
     data-page="download"
@@ -55,10 +55,10 @@
       <section class="hero hero-compact">
         <div class="wrap hero-inner">
           <h1 class="reveal" data-i18n="dl.title">Download</h1>
-          <p class="hero-lead reveal" data-i18n="dl.lead" data-i18n-html>
+          <p class="hero-lead" data-i18n="dl.lead" data-i18n-html>
             Full client on Windows…
           </p>
-          <div class="hero-actions reveal">
+          <div class="hero-actions">
             <a
               class="btn btn-discord"
               href="https://discord.gg/zVXSP4YbWC"
@@ -80,7 +80,7 @@
       <section>
         <div class="wrap">
           <div class="download-grid">
-            <article class="download-card reveal" id="windows">
+            <article class="download-card" id="windows">
               <span class="platform" data-i18n="dl.win.platform">Windows 10 / 11 · x64</span>
               <h2 data-i18n="dl.win.h">Desktop installer</h2>
               <p class="version" data-release="desktop" data-role="version">…</p>
@@ -108,7 +108,7 @@
               </p>
             </article>
 
-            <article class="download-card reveal" id="android">
+            <article class="download-card" id="android">
               <span class="platform" data-i18n="dl.and.platform">Android 7+ · arm64</span>
               <h2 data-i18n="dl.and.h">Player APK</h2>
               <p class="version" data-release="mobile" data-role="version">…</p>
@@ -137,11 +137,11 @@
             </article>
           </div>
 
-          <div class="note reveal" data-i18n="dl.noteUpdate" data-i18n-html>
+          <div class="note" data-i18n="dl.noteUpdate" data-i18n-html>
             <strong>Updates:</strong> use “Check for updates”…
           </div>
 
-          <div class="note note-frost reveal" data-i18n="dl.noteLicense" data-i18n-html>
+          <div class="note note-frost" data-i18n="dl.noteLicense" data-i18n-html>
             <strong>License:</strong> free for personal play…
           </div>
         </div>
@@ -159,7 +159,7 @@
     </footer>
 
     <script type="module">
-      import { initSite } from "./assets/js/site.js";
+      import { initSite } from "./assets/js/site.js?v=6";
       initSite();
     </script>
   </body>

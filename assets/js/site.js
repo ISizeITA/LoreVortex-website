@@ -4,8 +4,8 @@ import {
   setLocale,
   applyI18n,
   t,
-} from "./i18n.js";
-import { loadReleaseLinks, applyReleaseLinks } from "./releases.js";
+} from "./i18n.js?v=6";
+import { loadReleaseLinks, applyReleaseLinks } from "./releases.js?v=6";
 
 function buildLangSelect(select) {
   const locale = getLocale();
@@ -34,12 +34,18 @@ function initReveal() {
         }
       }
     },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+    { threshold: 0.08, rootMargin: "0px 0px -20px 0px" },
   );
 
   document.querySelectorAll(".reveal").forEach((el, i) => {
     el.style.setProperty("--reveal-delay", `${Math.min(i % 6, 5) * 70}ms`);
     io.observe(el);
+    // Above-the-fold blocks (download cards, hero): show immediately
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.92) {
+      el.classList.add("is-visible");
+      io.unobserve(el);
+    }
   });
 }
 
@@ -59,7 +65,25 @@ function initParallaxGlow() {
   );
 }
 
+async function loadDownloadReleases(locale) {
+  const loading = t(locale, "dl.loading");
+  document.querySelectorAll('[data-role="version"]').forEach((el) => {
+    el.textContent = loading;
+  });
+
+  const timeoutMs = 6000;
+  const data = await Promise.race([
+    loadReleaseLinks(),
+    new Promise((_, reject) => {
+      setTimeout(() => reject(new Error("Release fetch timeout")), timeoutMs);
+    }),
+  ]);
+  applyReleaseLinks(document.body, data);
+}
+
 export async function initSite() {
+  document.documentElement.classList.add("js");
+
   const locale = getLocale();
   setLocale(locale);
   applyI18n(document.body, locale);
@@ -67,19 +91,15 @@ export async function initSite() {
   const langSelect = document.getElementById("lang-select");
   if (langSelect) buildLangSelect(langSelect);
 
-  if (document.body.dataset.page === "download") {
-    try {
-      const loading = t(locale, "dl.loading");
-      document.querySelectorAll('[data-role="version"]').forEach((el) => {
-        el.textContent = loading;
-      });
-      const data = await loadReleaseLinks();
-      applyReleaseLinks(document.body, data);
-    } catch (err) {
-      console.error("Release links failed:", err);
-    }
-  }
-
   initReveal();
   initParallaxGlow();
+
+  if (document.body.dataset.page === "download") {
+    try {
+      await loadDownloadReleases(locale);
+    } catch (err) {
+      console.error("Release links failed:", err);
+      applyReleaseLinks(document.body, await loadReleaseLinks());
+    }
+  }
 }

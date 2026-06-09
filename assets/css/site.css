@@ -193,8 +193,13 @@ main,
   padding: 2.5rem 0 1.5rem;
 }
 
-/* Scroll reveal */
+/* Scroll reveal — visible by default; hidden only when JS runs (html.js) */
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+html.js .reveal {
   opacity: 0;
   transform: translateY(28px);
   transition:
@@ -203,7 +208,7 @@ main,
   transition-delay: var(--reveal-delay, 0ms);
 }
 
-.reveal.is-visible {
+html.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -368,7 +373,7 @@ main,
     scroll-behavior: auto;
   }
 
-  .reveal {
+  html.js .reveal {
     opacity: 1;
     transform: none;
     transition: none;
@@ -450,17 +455,19 @@ code {
   border-color: var(--border);
 }
 
-.btn-discord {
-  background: linear-gradient(180deg, #4e57c9, #3a4299);
-  border-color: #5865f2;
-  color: #eef0ff;
-  box-shadow: 0 4px 22px rgba(88, 101, 242, 0.22);
+.btn-discord,
+a.btn.btn-discord {
+  background: linear-gradient(180deg, #5865f2, #4752c4) !important;
+  border-color: #5865f2 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 22px rgba(88, 101, 242, 0.35);
 }
 
-.btn-discord:hover {
-  background: linear-gradient(180deg, #5865f2, #4752c4);
-  color: #fff;
-  border-color: #7289da;
+.btn-discord:hover,
+a.btn.btn-discord:hover {
+  background: linear-gradient(180deg, #6875f5, #5865f2) !important;
+  color: #fff !important;
+  border-color: #7289da !important;
 }
 
 .btn-discord--header {
