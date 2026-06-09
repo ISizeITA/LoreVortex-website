@@ -220,8 +220,7 @@ export const M = {
     "dl.loading": "Loading…",
     "dl.noteUpdate":
       "<strong>Updates:</strong> use “Check for updates” on the start screen. Every build is signed; unauthorised builds are rejected. You can also fetch new releases from GitHub manually.",
-    "dl.noteLicense":
-      "<strong>License:</strong> LoreVortex is free software under the <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\" rel=\"noopener\">GNU General Public License v3.0</a>. You may use, study, modify, and share it under the GPL terms; source is available in the project repository.",
+    "dl.noteLicense": "<strong>License:</strong> GNU General Public License v3.0",
 
     "foot.copy": "© ISize · Roldano Laurenza — LoreVortex",
     "foot.win": "Windows releases",
@@ -419,8 +418,7 @@ export const M = {
     "dl.loading": "Caricamento…",
     "dl.noteUpdate":
       "<strong>Aggiornamenti:</strong> usa «Controlla aggiornamenti» nella schermata iniziale. Ogni build è firmata.",
-    "dl.noteLicense":
-      "<strong>Licenza:</strong> LoreVortex è software libero sotto la <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\" rel=\"noopener\">GNU General Public License v3.0</a>. Puoi usarlo, studiarlo, modificarlo e ridistribuirlo secondo i termini della GPL; il codice sorgente è nel repository del progetto.",
+    "dl.noteLicense": "<strong>Licenza:</strong> GNU General Public License v3.0",
 
     "foot.copy": "© ISize · Roldano Laurenza — LoreVortex",
     "foot.win": "Release Windows",
