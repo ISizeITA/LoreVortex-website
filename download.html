@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Download LoreVortex — Windows installer (.exe) and Android APK. Free P2P TTRPG companion."
+    />
+    <title>Download — LoreVortex</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+  </head>
+  <body
+    data-page="download"
+    data-page-title-key="meta.downloadTitle"
+    data-page-desc-key="meta.downloadDescription"
+  >
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="index.html">
+          <img class="logo-mark" src="assets/img/logo.png" alt="LoreVortex" width="40" height="40" />
+          LoreVortex
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="index.html#languages" data-i18n="nav.languages">Languages</a>
+          <a href="index.html#preview" data-i18n="nav.preview">Preview</a>
+          <a href="index.html#features" data-i18n="nav.features">Features</a>
+          <a href="download.html" aria-current="page" data-i18n="nav.download">Download</a>
+        </nav>
+        <div class="header-actions">
+          <label class="lang-switch">
+            <span class="sr-only" data-i18n="lang.label">Language</span>
+            <select id="lang-select" aria-label="Language"></select>
+          </label>
+          <a class="btn btn-primary" href="#windows" data-i18n="nav.downloadCta">Download free</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-compact">
+        <div class="wrap hero-inner">
+          <h1 class="reveal" data-i18n="dl.title">Download</h1>
+          <p class="hero-lead reveal" data-i18n="dl.lead" data-i18n-html>
+            Full client on Windows…
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="download-grid">
+            <article class="download-card reveal" id="windows">
+              <span class="platform" data-i18n="dl.win.platform">Windows 10 / 11 · x64</span>
+              <h2 data-i18n="dl.win.h">Desktop installer</h2>
+              <p class="version" data-release="desktop" data-role="version">…</p>
+              <p data-i18n="dl.win.p">Native Tauri client with every feature…</p>
+              <a
+                class="btn btn-primary btn-shimmer"
+                data-release="desktop"
+                data-role="download"
+                href="https://github.com/ISizeITA/LoreVortex-releases/releases/latest"
+                data-i18n="dl.win.btn"
+              >
+                Download .exe
+              </a>
+              <p class="file-line">
+                <span data-i18n="dl.win.file">File:</span>
+                <span data-release="desktop" data-role="filename">—</span>
+              </p>
+              <ul class="req-list">
+                <li data-i18n="dl.win.req1">WebView2</li>
+                <li data-i18n="dl.win.req2">Network for updates</li>
+                <li data-i18n="dl.win.req3">No Node.js required</li>
+              </ul>
+              <p class="card-link">
+                <a data-release="desktop" data-role="page" href="#" data-i18n="dl.win.all">All Windows releases →</a>
+              </p>
+            </article>
+
+            <article class="download-card reveal" id="android">
+              <span class="platform" data-i18n="dl.and.platform">Android 7+ · arm64</span>
+              <h2 data-i18n="dl.and.h">Player APK</h2>
+              <p class="version" data-release="mobile" data-role="version">…</p>
+              <p data-i18n="dl.and.p">Join the GM's session…</p>
+              <a
+                class="btn btn-primary btn-shimmer"
+                data-release="mobile"
+                data-role="download"
+                href="https://github.com/ISizeITA/LoreVortex-Mobile/releases/latest"
+                data-i18n="dl.and.btn"
+              >
+                Download .apk
+              </a>
+              <p class="file-line">
+                <span data-i18n="dl.and.file">File:</span>
+                <span data-release="mobile" data-role="filename">—</span>
+              </p>
+              <ul class="req-list">
+                <li data-i18n="dl.and.req1">Allow unknown sources once</li>
+                <li data-i18n="dl.and.req2">arm64 phone</li>
+                <li data-i18n="dl.and.req3">Not a GM client</li>
+              </ul>
+              <p class="card-link">
+                <a data-release="mobile" data-role="page" href="#" data-i18n="dl.and.all">All Android releases →</a>
+              </p>
+            </article>
+          </div>
+
+          <div class="note reveal" data-i18n="dl.noteUpdate" data-i18n-html>
+            <strong>Updates:</strong> use “Check for updates”…
+          </div>
+
+          <div class="note note-frost reveal" data-i18n="dl.noteLicense" data-i18n-html>
+            <strong>License:</strong> free for personal play…
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span data-i18n="foot.copy">© ISize · Roldano Laurenza — LoreVortex</span>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="https://discord.gg/zVXSP4YbWC" rel="noopener" data-i18n="foot.discord">Discord</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { initSite } from "./assets/js/site.js";
+      initSite();
+    </script>
+  </body>
+</html>

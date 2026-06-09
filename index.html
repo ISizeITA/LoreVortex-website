@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="LoreVortex — peer-to-peer tabletop RPG companion. Interactive maps, dice, diary, local AI, voice & video. Windows + Android. No central server."
+    />
+    <title>LoreVortex — P2P TTRPG Companion</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/wireframes.css" />
+  </head>
+  <body data-page="home" data-page-title-key="meta.title" data-page-desc-key="meta.description">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="index.html">
+          <img class="logo-mark" src="assets/img/logo.png" alt="LoreVortex" width="40" height="40" />
+          LoreVortex
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="index.html" aria-current="page" data-i18n="nav.home">Home</a>
+          <a href="#languages" data-i18n="nav.languages">Languages</a>
+          <a href="#preview" data-i18n="nav.preview">Preview</a>
+          <a href="#features" data-i18n="nav.features">Features</a>
+          <a href="download.html" data-i18n="nav.download">Download</a>
+        </nav>
+        <div class="header-actions">
+          <label class="lang-switch">
+            <span class="sr-only" data-i18n="lang.label">Language</span>
+            <select id="lang-select" aria-label="Language"></select>
+          </label>
+          <a class="btn btn-primary" href="download.html" data-i18n="nav.downloadCta">Download free</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap hero-inner">
+          <span class="hero-badge reveal" data-i18n="hero.badge">P2P · No subscription · 10 UI languages</span>
+          <h1 class="reveal" data-i18n="hero.title" data-i18n-html>Your table,<br />on PC and phone</h1>
+          <p class="hero-lead reveal" data-i18n="hero.lead" data-i18n-html>
+            LoreVortex is a live tabletop RPG companion…
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="download.html#windows" data-i18n="hero.btnWin">Download for Windows</a>
+            <a class="btn btn-ghost" href="download.html#android" data-i18n="hero.btnApk">Android APK</a>
+          </div>
+          <div class="hero-meta reveal">
+            <span data-i18n="hero.metaGm" data-i18n-html><strong>GM</strong> on Windows</span>
+            <span data-i18n="hero.metaPlayers" data-i18n-html><strong>Players</strong> on Windows or Android</span>
+            <span data-i18n="hero.metaFree" data-i18n-html><strong>Free</strong> for personal play</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="languages" class="langs-section">
+        <div class="wrap panel reveal">
+          <h2 class="section-title" data-i18n="langs.title">Built for international tables</h2>
+          <p class="section-lead" data-i18n="langs.lead">
+            The app UI is fully translated — not English-only.
+          </p>
+          <ul class="lang-pills" aria-label="Supported UI languages">
+            <li>English</li>
+            <li>Italiano</li>
+            <li>Deutsch</li>
+            <li>Español</li>
+            <li>Français</li>
+            <li>Português</li>
+            <li>Polski</li>
+            <li>Русский</li>
+            <li>日本語</li>
+            <li>中文</li>
+          </ul>
+          <p class="langs-note" data-i18n="langs.note">
+            Available in the app today: English, Italiano, Deutsch…
+          </p>
+        </div>
+      </section>
+
+      <section id="preview">
+        <div class="wrap">
+          <h2 class="section-title reveal" data-i18n="shots.title">Desktop preview</h2>
+          <p class="section-lead reveal" data-i18n="shots.lead" data-i18n-html>
+            Modular dark-fantasy panels — <strong>Classic</strong> or <strong>Studio</strong>. Optional webcam bar and voice processing in both.
+          </p>
+          <div class="shots">
+            <!-- Classic: map panel -->
+            <figure class="shot reveal">
+              <div class="mock-app mock-app--classic" role="img" aria-labelledby="mock-map-cap">
+                <span class="mock-layout-tag" data-i18n="mock.layoutClassic">Classic layout</span>
+                <header class="mock-chrome">
+                  <div class="mock-chrome-row">
+                    <span class="mock-brand">LoreVortex</span>
+                    <div class="mock-ws-tabs">
+                      <span class="is-on" data-i18n="mock.tabMap">Map</span>
+                      <span data-i18n="mock.tabNarr">Narrative</span>
+                      <span data-i18n="mock.tabDocs">Documents</span>
+                    </div>
+                    <div class="mock-toolbar">
+                      <span class="mock-p2p-dot" title="Connected"><span data-i18n="mock.p2p">P2P live</span></span>
+                      <span class="mock-icon-btn" title="Webcam bar">
+                        <svg viewBox="0 0 24 24"><path d="M4 7h10v10H4V7zm12 2 4-2v8l-4-2V9z"/></svg>
+                      </span>
+                      <span class="mock-search" data-i18n="mock.search">Search panels…</span>
+                    </div>
+                  </div>
+                </header>
+                <div class="mock-body">
+                  <span class="mock-anno mock-anno--dock" aria-hidden="true">Dock</span>
+                  <nav class="mock-rail" aria-hidden="true">
+                    <span class="mock-rail-item"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h14"/></svg></span>
+                    <span class="mock-rail-item"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1"/><circle cx="15" cy="15" r="1"/></svg></span>
+                    <span class="mock-rail-item is-on"><svg viewBox="0 0 24 24"><path d="M3 7h18v10H3z"/><path d="M8 7V5h8v2"/></svg></span>
+                    <span class="mock-rail-item"><svg viewBox="0 0 24 24"><path d="M6 4h12v16H6z"/><path d="M9 8h6M9 12h6"/></svg></span>
+                  </nav>
+                  <div class="mock-slide-panel mock-slide-panel--wide mock-float-panel">
+                    <div class="mock-panel-grip" aria-hidden="true"></div>
+                    <div class="mock-panel-title">
+                      <span data-i18n="mock.tabMap">Map</span>
+                      <div class="mock-panel-dots"><i></i><i></i><i></i></div>
+                    </div>
+                    <div class="mock-map-wrap">
+                      <div class="mock-map-view">
+                        <div class="mock-map-texture"></div>
+                        <div class="mock-fog"></div>
+                        <div class="mock-wall mock-wall--1"></div>
+                        <div class="mock-wall mock-wall--2"></div>
+                        <div class="mock-wall mock-wall--3"></div>
+                        <div class="mock-los"></div>
+                        <span class="mock-token mock-token--g mock-token--sel">GM</span>
+                        <span class="mock-token mock-token--p">P1</span>
+                        <span class="mock-token mock-token--n">NPC</span>
+                        <span class="mock-ping"></span>
+                        <span class="mock-anno mock-anno--los" data-i18n="mock.los">Line of sight</span>
+                      </div>
+                      <div class="mock-map-footer">
+                        <span class="mock-pill is-on" data-i18n="mock.mapTab1">Dungeon</span>
+                        <span class="mock-pill" data-i18n="mock.mapTab2">Town</span>
+                        <span class="mock-pill mock-pill--add">+</span>
+                        <div class="mock-legend">
+                          <span><i class="mock-swatch mock-swatch--fog"></i><span data-i18n="mock.fog">Fog of war</span></span>
+                          <span><i class="mock-swatch mock-swatch--tok"></i><span data-i18n="mock.tokens">Tokens</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <figcaption id="mock-map-cap" data-i18n="shots.map">Map — grid, walls, tokens, fog of war, and line of sight</figcaption>
+            </figure>
+
+            <!-- Studio: dice in center tabs -->
+            <figure class="shot reveal">
+              <div class="mock-app mock-app--studio" role="img" aria-labelledby="mock-dice-cap">
+                <span class="mock-layout-tag mock-layout-tag--studio" data-i18n="mock.layoutStudio">Studio layout</span>
+                <header class="mock-chrome">
+                  <div class="mock-chrome-row">
+                    <span class="mock-brand">LoreVortex</span>
+                    <div class="mock-toolbar" style="margin-left: auto">
+                      <span class="mock-p2p-dot"><span data-i18n="mock.p2p">P2P live</span></span>
+                      <span class="mock-icon-btn">
+                        <svg viewBox="0 0 24 24"><path d="M4 7h10v10H4V7zm12 2 4-2v8l-4-2V9z"/></svg>
+                      </span>
+                      <span class="mock-search" data-i18n="mock.search">Search panels…</span>
+                    </div>
+                  </div>
+                </header>
+                <div class="mock-body mock-body--studio">
+                  <aside class="mock-studio-col mock-studio-col--left">
+                    <div class="mock-studio-tabs">
+                      <span data-i18n="mock.tabParty">Party</span>
+                      <span data-i18n="mock.tabDiary">Diary</span>
+                      <span class="is-on" data-i18n="mock.dicePanel">Dice</span>
+                    </div>
+                    <div class="mock-studio-list">
+                      <span class="is-on"><i>P1</i> Aldric</span>
+                      <span><i>P2</i> Mira</span>
+                      <span><i>GM</i> Narrator</span>
+                    </div>
+                  </aside>
+                  <div class="mock-studio-col mock-studio-col--center">
+                    <div class="mock-studio-tabs mock-studio-tabs--center">
+                      <span data-i18n="mock.tabMap">Map</span>
+                      <span data-i18n="mock.tabNarr">Narrative</span>
+                      <span class="is-on" data-i18n="mock.tabEncounter">Encounter</span>
+                    </div>
+                    <div class="mock-studio-center">
+                      <div class="mock-dice-grid">
+                        <span class="mock-die">d4</span><span class="mock-die">d6</span><span class="mock-die">d8</span><span class="mock-die">d10</span>
+                        <span class="mock-die">d12</span><span class="mock-die is-on">d20</span><span class="mock-die">d100</span>
+                      </div>
+                      <div class="mock-dice-row">
+                        <span class="mock-input">2</span>
+                        <span class="mock-input mock-input--mod">+5</span>
+                        <span class="mock-btn-roll" data-i18n="mock.roll">Roll</span>
+                      </div>
+                      <div class="mock-log">
+                        <div class="mock-log-line is-ok">
+                          <strong>Aldric</strong> · d20 → <em>18</em> +5 = <strong>23</strong>
+                        </div>
+                        <div class="mock-log-line is-crit">
+                          <strong>Mira</strong> · d20 → <em>1</em> · <span data-i18n="mock.critFail">crit fail</span>
+                        </div>
+                        <div class="mock-log-line">
+                          <strong>GM</strong> · <span data-i18n="mock.perception">Perception</span> · 14
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <aside class="mock-studio-col mock-studio-col--right">
+                    <div class="mock-studio-tabs">
+                      <span class="is-on" data-i18n="mock.tabAi">AI Chat</span>
+                      <span data-i18n="mock.tabChat">Chat</span>
+                    </div>
+                    <div class="mock-studio-chat">
+                      <p><strong>GM</strong> Roll stealth?</p>
+                      <p><strong>P1</strong> On it.</p>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <figcaption id="mock-dice-cap" data-i18n="shots.dice">Dice — shared log, crits, modifiers, and quick rolls</figcaption>
+            </figure>
+
+            <!-- Webcam + voice: Classic or Studio -->
+            <figure class="shot reveal">
+              <div class="mock-app mock-app--av" role="img" aria-labelledby="mock-av-cap">
+                <span class="mock-layout-tag" data-i18n="mock.layoutBoth">Classic · Studio</span>
+                <header class="mock-chrome">
+                  <div class="mock-chrome-row">
+                    <span class="mock-brand">LoreVortex</span>
+                    <div class="mock-toolbar" style="margin-left: auto">
+                      <span class="mock-icon-btn is-on">
+                        <svg viewBox="0 0 24 24"><path d="M4 7h10v10H4V7zm12 2 4-2v8l-4-2V9z"/></svg>
+                      </span>
+                      <span class="mock-search" data-i18n="mock.search">Search panels…</span>
+                    </div>
+                  </div>
+                </header>
+                <div class="mock-body mock-body--av">
+                  <div class="mock-webcam-bar">
+                    <div class="mock-webcam-controls">
+                      <span class="mock-ctrl is-on">
+                        <svg viewBox="0 0 24 24"><path d="M4 7h10v10H4V7zm12 2 4-2v8l-4-2V9z"/></svg>
+                        <span data-i18n="mock.cam">Camera</span>
+                      </span>
+                      <span class="mock-ctrl is-on">
+                        <svg viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/><path d="M5 11a7 7 0 0 0 14 0"/></svg>
+                        <span data-i18n="mock.mic">Mic</span>
+                      </span>
+                      <span class="mock-ctrl is-fx">
+                        <svg viewBox="0 0 24 24"><path d="M4 18h16M6 14h12M8 10h8M10 6h4"/></svg>
+                        <span data-i18n="mock.voiceFx">Voice FX</span>
+                      </span>
+                      <span class="mock-ctrl">
+                        <svg viewBox="0 0 24 24"><path d="M4 10v4h2l4 3V7L6 10H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg>
+                        <span data-i18n="mock.volume">Volume</span>
+                      </span>
+                    </div>
+                    <div class="mock-webcam-tiles">
+                      <div class="mock-tile is-live">
+                        <span class="mock-tile-live"></span>
+                        <span class="mock-tile-av"></span>
+                        <span class="mock-tile-name">GM</span>
+                      </div>
+                      <div class="mock-tile is-live">
+                        <span class="mock-tile-live"></span>
+                        <span class="mock-tile-av"></span>
+                        <span class="mock-tile-name" data-i18n="mock.player">Player</span>
+                      </div>
+                      <div class="mock-tile is-empty">
+                        <span class="mock-tile-av"></span>
+                        <span class="mock-tile-name" data-i18n="mock.offline">Offline</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mock-compare">
+                    <div class="mock-compare-pane">
+                      <span class="mock-compare-label" data-i18n="mock.layoutClassic">Classic</span>
+                      <div class="mock-compare-classic">
+                        <div class="mock-rail mock-rail--mini" aria-hidden="true">
+                          <span class="mock-rail-item is-on"></span>
+                          <span class="mock-rail-item"></span>
+                        </div>
+                        <div class="mock-mini-panel"></div>
+                      </div>
+                    </div>
+                    <div class="mock-compare-pane">
+                      <span class="mock-compare-label" data-i18n="mock.layoutStudio">Studio</span>
+                      <div class="mock-compare-studio">
+                        <span></span><span class="is-on"></span><span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mock-footnote mock-footnote--av" data-i18n="mock.avCallout">
+                    Toggle the webcam bar from the search row — in Classic or Studio. Only online players appear; mic noise suppression and voice effects apply in both layouts.
+                  </p>
+                </div>
+              </div>
+              <figcaption id="mock-av-cap" data-i18n="shots.av">Webcams &amp; voice — optional bar in Classic or Studio</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="wrap">
+          <h2 class="section-title reveal" data-i18n="feat.title">Everything LoreVortex does</h2>
+          <p class="section-lead reveal" data-i18n="feat.lead">One app to run or play a campaign…</p>
+
+          <div class="feature-grid">
+            <h3 class="feature-group-title reveal" data-i18n="feat.g.p2p">P2P session</h3>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.p2p1.t">Direct connection</h3>
+              <p data-i18n="feat.p2p1.d">WebRTC with no central server…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.p2p2.t">GM & Player roles</h3>
+              <p data-i18n="feat.p2p2.d">GM hosts on Windows…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.p2p3.t">Live sync</h3>
+              <p data-i18n="feat.p2p3.d">Shared state via Yjs CRDT…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.p2p4.t">Campaign export</h3>
+              <p data-i18n="feat.p2p4.d" data-i18n-html>SQLite autosave plus…</p>
+            </article>
+
+            <h3 class="feature-group-title reveal" data-i18n="feat.g.map">Map & combat</h3>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.map1.t">Interactive map</h3>
+              <p data-i18n="feat.map1.d">Custom image, square or hex grid…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.map2.t">Tokens & fog</h3>
+              <p data-i18n="feat.map2.d">HP, conditions, ownership…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.map3.t">Initiative & party</h3>
+              <p data-i18n="feat.map3.d">Combat order, party tracker…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.map4.t">Dice</h3>
+              <p data-i18n="feat.map4.d">d4–d100, modifiers…</p>
+            </article>
+
+            <h3 class="feature-group-title reveal" data-i18n="feat.g.narr">Story & characters</h3>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.narr1.t">Diary & quests</h3>
+              <p data-i18n="feat.narr1.d">Campaign diary, quest log…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.narr2.t">NPCs & relationships</h3>
+              <p data-i18n="feat.narr2.d">NPC library, generator…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.narr3.t">Sheets & RPG marketplace</h3>
+              <p data-i18n="feat.narr3.d">Presets for D&D 5e…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.narr4.t">Group chat</h3>
+              <p data-i18n="feat.narr4.d">Synchronised table chat…</p>
+            </article>
+
+            <h3 class="feature-group-title reveal" data-i18n="feat.g.docs">Documents & world</h3>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.doc1.t">PDF rulebook</h3>
+              <p data-i18n="feat.doc1.d">Built-in reader with search…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.doc2.t">Sheet editor</h3>
+              <p data-i18n="feat.doc2.d">Fillable character sheets…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.doc3.t">Time & weather</h3>
+              <p data-i18n="feat.doc3.d">In-game clock with seasons…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.doc4.t">Music & soundboard</h3>
+              <p data-i18n="feat.doc4.d">Shared playlist with P2P sync…</p>
+            </article>
+
+            <h3 class="feature-group-title reveal" data-i18n="feat.g.stream">Voice & video</h3>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.str1.t">Webcam bar</h3>
+              <p data-i18n="feat.str1.d">Optional collapsible strip at the top — camera tiles for online players only. Toggle it in Classic or Studio from the search row.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.str2.t">Voice & mic</h3>
+              <p data-i18n="feat.str2.d">DeepFilter/RNNoise processing…</p>
+            </article>
+
+            <h3 class="feature-group-title reveal" data-i18n="feat.g.ai">Local AI (optional)</h3>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.ai1.t">Built-in llama.cpp</h3>
+              <p data-i18n="feat.ai1.d">NPC roleplay, generation…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.ai2.t">Delegate inference</h3>
+              <p data-i18n="feat.ai2.d">GM can run AI on a player's PC…</p>
+            </article>
+
+            <h3 class="feature-group-title reveal" data-i18n="feat.g.mobile">Mobile & accessibility</h3>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.mob1.t">Android client</h3>
+              <p data-i18n="feat.mob1.d">Touch-first shell…</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3 data-i18n="feat.mob2.t">Accessibility</h3>
+              <p data-i18n="feat.mob2.d">UI scale and high contrast…</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap panel cta-panel reveal">
+          <h2 class="section-title" data-i18n="cta.title">Ready to play?</h2>
+          <p class="section-lead" data-i18n="cta.lead">Grab the Windows installer or Android APK.</p>
+          <a class="btn btn-primary" href="download.html" data-i18n="cta.btn">Go to download</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span data-i18n="foot.copy">© ISize · Roldano Laurenza — LoreVortex</span>
+        <div class="footer-links">
+          <a href="download.html" data-i18n="nav.download">Download</a>
+          <a href="https://github.com/ISizeITA/LoreVortex-releases/releases" rel="noopener" data-i18n="foot.win">Windows releases</a>
+          <a href="https://github.com/ISizeITA/LoreVortex-Mobile/releases" rel="noopener" data-i18n="foot.and">Android releases</a>
+          <a href="https://discord.gg/zVXSP4YbWC" rel="noopener" data-i18n="foot.discord">Discord</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { initSite } from "./assets/js/site.js";
+      initSite();
+    </script>
+  </body>
+</html>
