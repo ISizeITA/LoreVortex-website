@@ -4,8 +4,8 @@ import {
   setLocale,
   applyI18n,
   t,
-} from "./i18n.js?v=6";
-import { loadReleaseLinks, applyReleaseLinks } from "./releases.js?v=6";
+} from "./i18n.js?v=7";
+import { loadReleaseLinks, applyReleaseLinks } from "./releases.js?v=7";
 
 function buildLangSelect(select) {
   const locale = getLocale();
