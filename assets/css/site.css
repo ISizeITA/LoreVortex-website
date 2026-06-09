@@ -450,6 +450,52 @@ code {
   border-color: var(--border);
 }
 
+.btn-discord {
+  background: linear-gradient(180deg, #4e57c9, #3a4299);
+  border-color: #5865f2;
+  color: #eef0ff;
+  box-shadow: 0 4px 22px rgba(88, 101, 242, 0.22);
+}
+
+.btn-discord:hover {
+  background: linear-gradient(180deg, #5865f2, #4752c4);
+  color: #fff;
+  border-color: #7289da;
+}
+
+.btn-discord--header {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.82rem;
+}
+
+.btn-discord--header .btn-discord-label {
+  display: inline;
+}
+
+@media (max-width: 720px) {
+  .btn-discord--header .btn-discord-label {
+    display: none;
+  }
+
+  .btn-discord--header {
+    padding: 0.45rem 0.55rem;
+  }
+}
+
+.btn-icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex-shrink: 0;
+  display: block;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
 /* Hero */
 .hero {
   padding: 4rem 0 3rem;

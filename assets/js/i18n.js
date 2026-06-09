@@ -44,6 +44,7 @@ export const M = {
     "nav.preview": "Preview",
     "nav.download": "Download",
     "nav.downloadCta": "Download free",
+    "nav.discord": "Discord",
 
     "hero.badge": "P2P · No subscription · 10 UI languages",
     "hero.title": "Your table,<br />on PC and phone",
@@ -51,6 +52,7 @@ export const M = {
       "LoreVortex is a live tabletop RPG companion: interactive maps, dice, diary, NPCs, synced music, and optional on-device AI — all over WebRTC with <strong>no central server</strong> and no account.",
     "hero.btnWin": "Download for Windows",
     "hero.btnApk": "Android APK",
+    "hero.btnDiscord": "Join Discord",
     "hero.metaGm": "<strong>GM</strong> on Windows (full client)",
     "hero.metaPlayers": "<strong>Players</strong> on Windows or Android",
     "hero.metaFree": "<strong>Free</strong> for personal play",
@@ -188,6 +190,7 @@ export const M = {
     "cta.title": "Ready to play?",
     "cta.lead": "Grab the Windows installer or Android APK. No sign-up required.",
     "cta.btn": "Go to download",
+    "cta.btnDiscord": "Join our Discord",
 
     "dl.title": "Download",
     "dl.lead":
@@ -240,6 +243,7 @@ export const M = {
     "nav.preview": "Anteprima",
     "nav.download": "Download",
     "nav.downloadCta": "Scarica gratis",
+    "nav.discord": "Discord",
 
     "hero.badge": "P2P · Nessun abbonamento · 10 lingue UI",
     "hero.title": "Il tavolo da gioco,<br />su PC e telefono",
@@ -247,6 +251,7 @@ export const M = {
       "LoreVortex è un compagno per GDR dal vivo: mappe, dadi, diario, PNG, musica sincronizzata e AI opzionale in locale — tutto via WebRTC, <strong>senza server centrale</strong> e senza account.",
     "hero.btnWin": "Scarica per Windows",
     "hero.btnApk": "APK Android",
+    "hero.btnDiscord": "Unisciti a Discord",
     "hero.metaGm": "<strong>GM</strong> su Windows (client completo)",
     "hero.metaPlayers": "<strong>Giocatori</strong> su Windows o Android",
     "hero.metaFree": "<strong>Gratuito</strong> per uso personale",
@@ -384,6 +389,7 @@ export const M = {
     "cta.title": "Pronto a giocare?",
     "cta.lead": "Scarica l'installer Windows o l'APK Android. Nessuna registrazione.",
     "cta.btn": "Vai al download",
+    "cta.btnDiscord": "Server Discord",
 
     "dl.title": "Download",
     "dl.lead":

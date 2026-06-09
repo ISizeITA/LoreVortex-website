@@ -3,6 +3,7 @@ import {
   getLocale,
   setLocale,
   applyI18n,
+  t,
 } from "./i18n.js";
 import { loadReleaseLinks, applyReleaseLinks } from "./releases.js";
 
@@ -67,12 +68,16 @@ export async function initSite() {
   if (langSelect) buildLangSelect(langSelect);
 
   if (document.body.dataset.page === "download") {
-    const loading = t(locale, "dl.loading");
-    document.querySelectorAll('[data-role="version"]').forEach((el) => {
-      el.textContent = loading;
-    });
-    const data = await loadReleaseLinks();
-    applyReleaseLinks(document.body, data);
+    try {
+      const loading = t(locale, "dl.loading");
+      document.querySelectorAll('[data-role="version"]').forEach((el) => {
+        el.textContent = loading;
+      });
+      const data = await loadReleaseLinks();
+      applyReleaseLinks(document.body, data);
+    } catch (err) {
+      console.error("Release links failed:", err);
+    }
   }
 
   initReveal();
