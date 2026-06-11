@@ -9,9 +9,9 @@ const FALLBACK = {
     assetName: "LoreVortex_1.12.0_x64-setup.exe",
   },
   mobile: {
-    version: "1.12.0",
-    url: "https://github.com/ISizeITA/LoreVortex-Mobile/releases/download/v1.12.0/LoreVortex_1.12.0_android-arm64.apk",
-    assetName: "LoreVortex_1.12.0_android-arm64.apk",
+    version: "1.12.1",
+    url: "https://github.com/ISizeITA/LoreVortex-Mobile/releases/download/v1.12.1/LoreVortex_1.12.1_android-arm64.apk",
+    assetName: "LoreVortex_1.12.1_android-arm64.apk",
   },
 };
 
@@ -89,4 +89,5 @@ export function applyReleaseLinks(root, data) {
     }
   });
 }
+
 
