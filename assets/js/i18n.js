@@ -1,4 +1,11 @@
-/** UI languages shipped in the LoreVortex app (same set as src/i18n/). */
+import { locale as deLocale } from "./locales/de.js";
+import { locale as esLocale } from "./locales/es.js";
+import { locale as frLocale } from "./locales/fr.js";
+import { locale as ptLocale } from "./locales/pt.js";
+import { locale as plLocale } from "./locales/pl.js";
+import { locale as ruLocale } from "./locales/ru.js";
+import { locale as jaLocale } from "./locales/ja.js";
+import { locale as zhLocale } from "./locales/zh.js";
 export const LOCALES = [
   { code: "en", label: "English" },
   { code: "it", label: "Italiano" },
@@ -608,11 +615,14 @@ const OVERLAY = {
   },
 };
 
-for (const { code } of LOCALES) {
-  if (code === "en" || code === "it") continue;
-  M[code] = { ...M.en, ...(OVERLAY[code] ?? {}) };
-  M[code]["langs.note"] = M.en["langs.note"];
-}
+M.de = deLocale;
+M.es = esLocale;
+M.fr = frLocale;
+M.pt = ptLocale;
+M.pl = plLocale;
+M.ru = ruLocale;
+M.ja = jaLocale;
+M.zh = zhLocale;
 
 export function t(locale, key) {
   if (!key) return "";
