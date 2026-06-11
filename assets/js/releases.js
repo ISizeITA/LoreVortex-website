@@ -4,9 +4,9 @@
  */
 const FALLBACK = {
   desktop: {
-    version: "1.12.0",
-    url: "https://github.com/ISizeITA/LoreVortex-releases/releases/download/v1.12.0/LoreVortex_1.12.0_x64-setup.exe",
-    assetName: "LoreVortex_1.12.0_x64-setup.exe",
+    version: "1.12.1",
+    url: "https://github.com/ISizeITA/LoreVortex-releases/releases/download/v1.12.1/LoreVortex_1.12.1_x64-setup.exe",
+    assetName: "LoreVortex_1.12.1_x64-setup.exe",
   },
   mobile: {
     version: "1.12.1",
@@ -89,5 +89,6 @@ export function applyReleaseLinks(root, data) {
     }
   });
 }
+
 
 
