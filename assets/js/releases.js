@@ -4,14 +4,14 @@
  */
 const FALLBACK = {
   desktop: {
-    version: "1.13.5",
-    url: "https://github.com/ISizeITA/LoreVortex-releases/releases/download/v1.13.5/LoreVortex_1.13.5_x64-setup.exe",
-    assetName: "LoreVortex_1.13.5_x64-setup.exe",
+    version: "1.13.6",
+    url: "https://github.com/ISizeITA/LoreVortex-releases/releases/download/v1.13.6/LoreVortex_1.13.6_x64-setup.exe",
+    assetName: "LoreVortex_1.13.6_x64-setup.exe",
   },
   mobile: {
-    version: "1.13.5",
-    url: "https://github.com/ISizeITA/LoreVortex-Mobile/releases/download/v1.13.5/LoreVortex_1.13.5_android-arm64.apk",
-    assetName: "LoreVortex_1.13.5_android-arm64.apk",
+    version: "1.13.6",
+    url: "https://github.com/ISizeITA/LoreVortex-Mobile/releases/download/v1.13.6/LoreVortex_1.13.6_android-arm64.apk",
+    assetName: "LoreVortex_1.13.6_android-arm64.apk",
   },
 };
 
@@ -89,6 +89,8 @@ export function applyReleaseLinks(root, data) {
     }
   });
 }
+
+
 
 
 
